@@ -27,6 +27,7 @@ class Updater:
         updates = updates['updates']
         threads = []
         for update in updates:
+            print(update)
             threads.append(self.dispatcher.process_update(update))
         await asyncio.gather(*threads)
 

@@ -2,7 +2,7 @@ import aiohttp
 import logging
 from vk.errors import *
 import time
-
+import json
 
 class VKAPI:
     VERSION = '5.103'
@@ -46,9 +46,14 @@ class VKAPI:
             self.token_pos = 0
         params['v'] = VKAPI.VERSION
 
+    @staticmethod
+    def process_json_params(params):
+        for key, value in params.items():
+            if type(value) is dict:
+                params[key] = json.dumps(value, ensure_ascii=False)
     async def request(self, request_method, vk_method, custom_url=None, retry=0, **params):
         self.set_default_request_params(params)
-
+        self.process_json_params(params)
         args = dict(method=request_method,
                     url=custom_url if custom_url else VKAPI.ENDPOINT + vk_method,
                     params=params if request_method == 'get' else None,
@@ -56,10 +61,10 @@ class VKAPI:
 
         async with self.session.request(**args) as r:
             if r.status == 200:
-                json = await r.json()
-                error = json.get('error')
-                response = json.get('response')
-                ts = json.get('ts')
+                json_r = await r.json()
+                error = json_r.get('error')
+                response = json_r.get('response')
+                ts = json_r.get('ts')
                 if error:
                     error_code = error['error_code']
                     if error_code in (6, 10):
@@ -75,7 +80,7 @@ class VKAPI:
                 elif response:
                     return response
                 elif ts:
-                    return json
+                    return json_r
             else:
                 print(r.status)
 
@@ -91,9 +96,10 @@ class VKAPI:
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         await self.session.close()
 
-    async def reply_text(self, text, message):
-        return await self.get('messages.send',
-                              user_id=message['from_id'],
-                              random_id=int(time.time() * 10000000),
-                              message=text)
+    async def reply_text(self, text, message, **kwargs):
+        return await self.post('messages.send',
+                               user_id=message['from_id'],
+                               random_id=int(time.time() * 10000000),
+                               message=text,
+                               **kwargs)
 

@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a3a9e05-6245-415b-b61f-9e3020da401d" name="Default Changelist" comment="" />
+    <list default="true" id="8ab4c40d-7ffd-4fac-9481-5a33b9f5f01c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/creative_party.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/keyboards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/posts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/updates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vk/bot/keyboard/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vk/bot/keyboard/buttons/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simplevk.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/commands/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/commands/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/strings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/strings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/vk/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk/bot/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/vk/bot/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk/bot/updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/vk/bot/updater.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZOTQM7V3B61ZhhCdRikAQtU5rC" />
+  <component name="ProjectId" id="1ZOwgIiz7rLERryYA9vICE7Jw6i" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Diprog\Desktop\simplevk" />
-    </key>
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,12 +57,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3a3a9e05-6245-415b-b61f-9e3020da401d" name="Default Changelist" comment="" />
-      <created>1584709123953</created>
+      <changelist id="8ab4c40d-7ffd-4fac-9481-5a33b9f5f01c" name="Default Changelist" comment="" />
+      <created>1584723557411</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584709123953</updated>
+      <updated>1584723557411</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
